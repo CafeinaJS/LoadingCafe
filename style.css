@@ -1,0 +1,41 @@
+body{
+    background-color: #1e1e1e;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+  }
+  .coffee{
+    height: 105px;
+    width: 110px;
+    border: 10px solid #1e1e1e;
+    box-shadow: 0 0 0 10px #e2e2e2;
+    margin: auto;
+    position: relative;
+    border-radius: 0 0 50px 50px;
+    background-image: linear-gradient(
+    0deg,
+    #e2e2e2 110px,
+      transparent 110px,
+      transparent 230px
+    );
+    background-size: 230px 230px;
+    background-position: 0 0;
+    animation: fill 2s infinite;
+  }
+  .coffee:before{
+    position: absolute;
+    content: "";
+    height: 40px;
+    width: 25px;
+    border: 10px solid #e2e2e2;
+    border-radius: 0 20px 20px 0;
+    right: -55px
+  }
+  @keyframes fill{
+    100%{
+      background-position: 0 -115px;
+    }
+  }
+
